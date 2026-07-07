@@ -1,37 +1,80 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "almond",
+  "name": "Unanet Product Guide",
+  "description": "Step-by-step guides for every product—platform setup, analytics, and integrations in one place.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#007C79",
+    "light": "#00C9C4",
+    "dark": "#10365A"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "contextual": {
+    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
+  },
   "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Home",
+          "icon": "house",
+          "href": "/"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Changelog",
+          "icon": "scroll-text",
+          "href": "https://www.mintlify.com/docs/changelog"
+        },
+        {
+          "anchor": "Help",
+          "icon": "life-buoy",
+          "href": "https://www.mintlify.com/docs/contact-support"
         }
       ]
-    }
+    },
+    "directory": "card",
+    "groups": [
+      {
+        "group": "Platform",
+        "icon": "layers",
+        "expanded": true,
+        "pages": [
+          "platform/quickstart",
+          "platform/key-concepts",
+          "platform/configuration/settings",
+          "platform/configuration/user-management",
+          "platform/administration/roles-permissions"
+        ]
+      },
+      {
+        "group": "Analytics",
+        "icon": "chart-bar",
+        "expanded": true,
+        "pages": [
+          "analytics/quickstart",
+          "analytics/connect-data",
+          "analytics/dashboards/create-dashboard",
+          "analytics/reports/scheduled-reports"
+        ]
+      },
+      {
+        "group": "Integrations",
+        "icon": "plug",
+        "expanded": true,
+        "pages": [
+          "integrations/quickstart",
+          "integrations/authentication",
+          "integrations/connectors/crm",
+          "integrations/webhooks/configure"
+        ]
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -41,32 +84,19 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://unanet.com/support"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "unanet.com",
+      "href": "https://unanet.com"
     }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/unanettech",
+      "linkedin": "https://www.linkedin.com/company/unanet"
     }
   }
 }
